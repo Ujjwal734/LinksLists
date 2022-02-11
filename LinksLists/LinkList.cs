@@ -41,5 +41,39 @@ namespace LinksLists
                 temp = temp.next;
             }
         }
+        public Node InsertAtAnyPosition(int position , int data)
+        {
+            if (position < 1)
+            {
+                Console.WriteLine("Invalid Position / Position should not be less than one");
+            }
+            if (position == 1)
+            {
+                var newNode = new Node(data);
+                newNode.next = this.head;
+                head = newNode;
+            }
+            else
+            {
+                while (position-- != 0)
+                {
+                    if (position ==1)
+                    {
+                        Node node = new Node(data);
+                        node.next = this.head.next;
+                        head.next = node;
+                        break;
+                    }
+                    head = head.next;
+                }
+                if (position != 1)
+                {
+                    Console.WriteLine("Position Out of Range...! ");
+                }
+            }
+            Console.WriteLine("Inserted Value is "+ data);
+            Console.WriteLine("{0} inserted into linked list",+ data);
+            return head;
+        }
     }
 }

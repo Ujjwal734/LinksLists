@@ -27,6 +27,19 @@ namespace LinksLists
             }
             Console.WriteLine("{0} inserted into linked list",node.data);
         }
-        
+        public void Display()
+        {
+            Node temp = this.head;
+            if (temp == null)
+            {
+                Console.WriteLine("LinkedList is Empty");
+                return;
+            }
+            while (temp != null)
+            {
+                Console.WriteLine(temp.data + " ");
+                temp = temp.next;
+            }
+        }
     }
 }

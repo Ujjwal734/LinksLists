@@ -9,3 +9,6 @@ list.Display();
 Console.WriteLine("************************************");
 list.RemoveFirstNode();
 list.Display();
+Console.WriteLine("************************************");
+list.RemoveLastNode();
+list.Display();

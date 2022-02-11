@@ -71,9 +71,17 @@ namespace LinksLists
                     Console.WriteLine("Position Out of Range...! ");
                 }
             }
-            Console.WriteLine("Inserted Value is "+ data);
             Console.WriteLine("{0} inserted into linked list",+ data);
             return head;
+        }
+        public Node RemoveFirstNode()
+        {
+            if (this.head == null)
+            {
+                return null;
+            }
+            this.head = this.head.next;
+            return this.head;
         }
     }
 }

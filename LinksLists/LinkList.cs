@@ -101,5 +101,17 @@ namespace LinksLists
             NewNode.next = null;
             return head;
         }
+        public Node Search(int Value)
+        {
+            while (this.head != null)
+            {
+                if (this.head.data == Value)
+                {
+                    return this.head;
+                }
+                this.head=this.head.next;
+            }
+            return null;
+        }
     }
 }

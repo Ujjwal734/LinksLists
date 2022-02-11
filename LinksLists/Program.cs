@@ -7,8 +7,11 @@ list.Add(70);
 list.InsertAtAnyPosition(2, 30);
 list.Display();
 Console.WriteLine("************************************");
-list.RemoveFirstNode();
+/*list.RemoveFirstNode();
 list.Display();
 Console.WriteLine("************************************");
 list.RemoveLastNode();
+list.Display();*/
+Console.WriteLine("************************************");
+list.Search(30);
 list.Display();

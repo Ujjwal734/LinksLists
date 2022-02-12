@@ -20,6 +20,7 @@ list.Display();*/
 //list.Display();
 //Console.WriteLine("************************************");
 //list.DeleteAtParticularPosition(2);
-Console.WriteLine("**************************************");
-list.Size();
+//Console.WriteLine("**************************************");
+//list.Size();
+list.AddInReverseOrder(10);
 list.Display();

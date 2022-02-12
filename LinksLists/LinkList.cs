@@ -154,5 +154,19 @@ namespace LinksLists
             }
             Console.WriteLine("Length of LinkList is :- " + " " + count);
         }
+        public void AddInReverseOrder(int data)
+        {
+            Node newNode = new Node(data);
+            if (this.head == null)
+            {
+                this.head = newNode;
+            }
+            else
+            {
+                Node temp = this.head;
+                head = newNode;
+                head.next = temp;
+            }
+        }
     }
 }

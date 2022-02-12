@@ -137,5 +137,22 @@ namespace LinksLists
             Node next = temp.next.next;
             temp.next = next;
         }
+        public void Size()
+        {
+            Node temp = this.head;
+            int count = 0;
+            if (temp == null)
+            {
+                Console.WriteLine("Linklist is empty....! ");
+                return;
+            }
+            while (temp !=null)
+            {
+                Console.WriteLine(temp.data +" ");
+                temp = temp.next;
+                count++;
+            }
+            Console.WriteLine("Length of LinkList is :- " + " " + count);
+        }
     }
 }
